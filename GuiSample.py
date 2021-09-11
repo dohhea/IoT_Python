@@ -13,7 +13,7 @@ class MyFrame(Frame):									# 간단한 상속 활용
 		def onClick():										# 이것이 눌릴때 실행할 핸들러를 정의
 			str1=entryName.get()							
 			str2=entryComp.get()
-			txtComment.insert(tkinter.CURRENT, str1+str2)	# 두개의 Entry의 값을 Text에 출력함
+			txtComment.insert(tkinter.CURRENT, str1+str2 + '\n')	# 두개의 Entry의 값을 Text에 출력함
 			btnSave.configure(text="OK")
 
 		self.master = master
