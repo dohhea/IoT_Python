@@ -1,3 +1,5 @@
+# 입력된 문자열이 Palindrome인지 아닌지를 파악하여 출력
+
 def palindrome(str1):
     reverse_str=""
     for ch in str1:

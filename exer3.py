@@ -1,3 +1,5 @@
+# 문자열을 입력받아 알파벳인경우 대문자->소문자 소문자->대문자 변경하여 출력
+# 몇개의 문자가 변경되었는지도 출력
 count=0
 
 def toggle(ch):
@@ -10,7 +12,7 @@ def toggle(ch):
             return ch.lower()
     return ch
 
-string = input("Enter a sentense")
+string = input("문장 하나를 입력하세요 : ")
 
 new_string = ""
 for ch in string:

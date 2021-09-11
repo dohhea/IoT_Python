@@ -1,3 +1,4 @@
+# 문자열을 입력받아 공백을 구분자로 단어를 분리한 후 이를 모두 대문자로 바꾸어 출력
 def split(string):
     return string.split(' ')
 
