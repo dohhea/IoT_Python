@@ -1,4 +1,4 @@
-# 매우 간단한  프로그램 샘플
+# 매우 간단한 GUI 프로그램 샘플
 
 from tkinter import *
 from tkinter.ttk import *
