@@ -17,7 +17,7 @@ class MyFrame(Frame):										# 간단한 상속 활용
 			btnSave.configure(text="OK")
 
 		self.master = master
-		self.master.title("고객 입력")						# 프레임의 타이틀 설정
+		self.master.title("고객 입력")						 # 프레임의 타이틀 설정
 		self.pack(fill=BOTH, expand=True)					# 프레임의 속성 설정				
 
 		# 성명
