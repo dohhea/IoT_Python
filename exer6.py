@@ -1,9 +1,9 @@
 # 딕셔너리를 사용하여 자료의 추가, 수정, 삭제 등의 기능을 제공
 
-dc = {'새우깡' : 700, '콘치즈' : 850, '꼬깔콘': 750}
+dic = {'꿀꽈배기' : 1200, '치토스' :1500, '고소미': 1350}
 
 def main():
-    global dc
+    global dic
     while(True):
         ch=input("추가 i, 수정 m, 삭제 d, 전체보기 l, 종료 q : ")
         if ch not in "imdlq":               # 올바른 입력인지를 확인
@@ -13,26 +13,26 @@ def main():
         if ch == 'i':
             entry=input("상품명과 가격입력 : ")
             e1=entry.split(" ")
-            if e1[0] in dc:                 # 엔트리 이미 있음
+            if e1[0] in dic:                 # 엔트리 이미 있음
                 print(e1[0] + "는 이미 있습니다. 추가할 수 없습니다.")
             else:
-                dc[e1[0]]=int(e1[1])        # 엔트리 추가
+                dic[e1[0]]=int(e1[1])        # 엔트리 추가
         elif ch== 'm':
             entry=input("상품명과 가격입력 : ")
             e1=entry.split(" ")
-            if e1[0] not in dc:             # 엔트리 없음
+            if e1[0] not in dic:             # 엔트리 없음
                 print(e1[0] + "가 없습니다. 수정할 수 없습니다.")
             else:
-                dc[e1[0]]=int(e1[1])        # 엔트리 업데
+                dic[e1[0]]=int(e1[1])        # 엔트리 업데
         elif ch== 'd':
             entry=input("상품명 입력 : ")
-            if entry not in dc:             # 엔트리 없음
+            if entry not in dic:             # 엔트리 없음
                 print(entry + "가 없습니다. 삭제할 수 없습니다.")
             else:
-                del dc[entry]               # 엔트리 삭제
+                del dic[entry]               # 엔트리 삭제
         elif ch== 'l':
-            for e in dc:
-                print(e, dc[e])
+            for e in dic:
+                print(e, dic[e])
         else:                               # 입력이 'q'인 경우임
             break
 
