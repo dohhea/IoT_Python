@@ -4,7 +4,7 @@ import threading
 
 # Thread가 실행할 코드
 def sum(n, name):
-    total=0
+    total=0                     # 지역변수
     for i in range(1,n+1):
         total += i
     print("Subthread " + name, "= ", total)

@@ -10,7 +10,8 @@ def sum(n, name):
         lock.acquire()                                  # mutex 획득
         total += i
         lock.release()                                  # mutex 반납
-        
+    print("Subthread " + name, "= ", total)
+    
 lock=threading.Lock()                                   # mutex lock 생성
 total=0                                                 # 전역변수. 두개의 스레드에서 동시 접근
 

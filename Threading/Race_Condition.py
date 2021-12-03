@@ -8,6 +8,7 @@ def sum(n, name):
     global total
     for i in range(1,n+1):
         total += i
+    print("Subthread " + name, "= ", total)
 
 total=0                                                 # 전역변수. 두개의 스레드에서 동시 접근
 
