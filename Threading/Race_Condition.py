@@ -12,7 +12,7 @@ def sum(n, name):
 
 total=0                                                 # 전역변수. 두개의 스레드에서 동시 접근
 
-t1 = threading.Thread(target=sum, args=(100000, "t1"))     # Thread t1 생성
+t1 = threading.Thread(target=sum, args=(100000, "t1"))  # Thread t1 생성
 t1.start()                                              # Thread t1 실행
 
 t2 = threading.Thread(target=sum, args=(100000, "t2"))     # Thread t2 생성
